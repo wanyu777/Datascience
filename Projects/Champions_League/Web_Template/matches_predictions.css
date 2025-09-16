@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    background-color: #1e3d59;
+
+    /* Base Button Style */
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+a.btn {
+  background-color: #555;
+  color: white;
+  border: none;
+}
+a.btn:hover {
+  background-color: #333;
+}
+
+a.standings {
+  background-color: #1e90ff;
+  color: white;
+}
+a.standings:hover {
+  background-color: #1565c0;
+}
+
+}
+
+h1{
+    margin: 20px 0  20px 0;
+    color: #fff;
+}
+
+/* General Table */
+table {
+  width: 75%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+th {
+  background-color: #1e3d59;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Alternate Row Colors */
+tbody tr:nth-child(odd):not(.matchday-header) {
+  background-color: #f9f9f9;
+}
+tbody tr:nth-child(even):not(.matchday-header) {
+  background-color: #eef5ff;
+}
+
+/* Matchday Header Row */
+.matchday-header td {
+  background-color: #f4a261;  /* Orange highlight */
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 8px;
+}
+
+/* Bold Teams */
+td:first-child,
+td:last-child {
+  font-weight: bold;
+}
+
+/* Score Column */
+td:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e63946;
+}
